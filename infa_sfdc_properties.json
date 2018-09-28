@@ -1,0 +1,27 @@
+{ "app_base":".",
+
+  "_desc_SALESFORCE_CREDENTIALS":"Provide Salesforce org credentials",
+  "consumer_key":"<SFDC connected app consumer key>",
+  "consumer_secret":"SFDC connected app consumer secret",
+  "username":"<SFDC user name>",
+  "password":"SFDC user password+security token",
+
+  "sfdc_login_uri":"https://login.salesforce.com",
+  "root_uri":"/services/data/",
+
+  "sfdc_api_version":"33.0",
+
+  "_desc_INFA_CREDENTIALS":"Provide Informatica server and folder information",
+
+  "infa_client_folder":"<Informatica folder name. Not needed if running app from .../Scripts",
+
+  "log_directory":"log",
+  "debug_level": "EXTRA",
+
+  "_desc_INFA_OBJECT_DETAILS":"Details about Informatica objects, types, databases, etc",
+  "infa_object_type":["source", "target"],
+
+  "_infa_src_dbdnames":["MnIRP", "REVVY", "Salesforce"],
+  "_infa_tgt":["EtlRunInfo__c"],
+  "infa_export_dir":"sfdc_infa_validation_export"
+}
